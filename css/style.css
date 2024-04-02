@@ -159,6 +159,7 @@ a {
 	gap: 0.75rem;
 	justify-content: space-around;
 	margin-bottom: 1rem;
+	justify-items: flex-end;
 }
 
 /*End of Projects CSS Block*/
