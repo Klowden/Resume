@@ -1,157 +1,170 @@
-
 /* global styles */
 
-
 body {
-    color:whitesmoke;
-    font-size: 18px;
-    font-family: "Constantia","Times",Times,Serif;
-    background-color: #010101;
+	color: whitesmoke;
+	font-size: 18px;
+	font-family: "Constantia", "Times", Times, Serif;
+	background-color: #010101;
 }
 
 canvas {
-    position: fixed;
-    display: block; /*(display:block) when ready to use*/
-    pointer-events: all;
-    mix-blend-mode: screen;
-    z-index: -1;
+	position: fixed;
+	display: block; /*(display:block) when ready to use*/
+	pointer-events: all;
+	mix-blend-mode: screen;
+	z-index: -1;
 }
 
 main {
-    z-index: 1;
+	z-index: 1;
 }
 
 /*********** LINKS **********/
 a {
-    color:royalblue;
+	color: royalblue;
 }
 
+.contact-me > h3 > a {
+	color: #ffd700;
+}
 
 /*********** LINKS end **********/
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 column grid */
-    justify-content: center;
-    gap: 1.5rem;
-    padding-block: 2rem;
-    width: min(90%, 80rem);
-    margin-inline: auto;
+	display: grid;
+	grid-template-columns: 1fr; /* 1 column grid */
+	justify-content: center;
+	gap: 1.5rem;
+	padding-block: 2rem;
+	width: min(90%, 80rem);
+	margin-inline: auto;
 }
 
 .grid-col-span2 {
-    grid-column: span 2;
+	grid-column: span 2;
 }
 
 .content-wrap {
-    background: rgba(0, 0, 0, 0.9);
-    border-radius: 1rem;
-    
+	background: rgba(0, 0, 0, 0.9);
+	border-radius: 1rem;
 }
 
 /*Header CSS Block*/
 .header {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 1.5rem 0 1.5rem;
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 #name {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    color:#ffd700
+	grid-column: 1;
+	grid-row: 1;
+	align-self: center;
+	color: #ffd700;
 }
 
 #dev-img {
-    width: 15rem;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    justify-self: center;
-    border-radius: 10rem;
-    padding: 1.5rem
+	width: 15rem;
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	justify-self: center;
+	border-radius: 10rem;
+	padding: 1.5rem;
 }
 
 #tagline {
-    grid-column: 1;
+	grid-column: 1;
 }
 
 .prof-sum {
-    grid-row-start: 3;
-    grid-row-end: span 2;
-    align-self: center;
+	grid-row-start: 3;
+	grid-row-end: span 2;
+	align-self: center;
 }
 
 .freelance {
-    color: #ffd700;
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+	color: #ffd700;
+	justify-self: center;
+	align-self: center;
 }
 
 .contact-me {
-    grid-column: 3;
-    grid-row: 2;
-    justify-self: center;
+	justify-self: center;
 }
 
 .contact-me > h3 {
-    color: #ffd700;
+	color: #ffd700;
 }
 
 .note {
-    grid-column: 3;
-    grid-row: 4;
-    align-self: flex-end;
-    padding: 1rem;
-    justify-self: flex-end;
-    opacity: 0.9;
-    color:#8d8d8d;
-    font-size: small;
+	height: max-content;
+	align-self: flex-end;
+	padding: 1rem;
+	justify-self: flex-end;
+	opacity: 0.9;
+	color: #8d8d8d;
+	font-size: small;
+}
+
+.header-right {
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-column: 3;
+	grid-row: 1 / span 4;
 }
 /*End of Header CSS Block*/
 
 /*Projects CSS Block*/
 .portfolio {
-    padding: 0 1.5rem 0 1.5rem;
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 .projects {
-    display: grid;
-    gap:1.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    border: 2px solid #ffd700;
-    padding: 1.5rem;
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(3, 1fr);
+	border: 2px solid #ffd700;
+	padding: 1.5rem;
 }
 
 .project-item {
-    display:grid;
-    grid-template-columns: repeat(1, 1fr);
-    border: 1px dotted whitesmoke
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	border: 1px dotted whitesmoke;
 }
 
-.project-item > 
-.project-name, 
+.project-item > .project-name,
 .project-description {
-    padding: 0 1rem;
+	padding: 0 1rem;
 }
 
 .project-item > .project-link {
-    padding: 0 1rem 1rem 1rem;
+	padding: 0 1rem 1rem 1rem;
 }
 
 .project-img {
-    width: 10rem;
-    min-width: 8rem;
-    justify-self: center;
+	width: 10rem;
+	min-width: 8rem;
+	justify-self: center;
+	object-fit: contain;
+	-o-object-fit: contain;
+	max-width: 100%;
 }
+
+.align-links {
+	display: flex;
+	gap: 0.75rem;
+	justify-content: space-around;
+	margin-bottom: 1rem;
+}
+
 /*End of Projects CSS Block*/
 
 /*Skills CSS Block*/
 .skills-section {
-    padding: 0 1.5rem 0 1.5rem;
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 /* .skills {
@@ -159,222 +172,278 @@ a {
 } */
 
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    border: 2px solid #ffd700;
-    padding: 1.5rem 5rem;
-    gap:1rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	border: 2px solid #ffd700;
+	padding: 1.5rem 5rem;
+	gap: 1rem;
 }
 
 .skills-list > li {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap:.5rem;
-    padding: 1rem 0;
-    height: 3.5rem;
-    border: 1px dotted whitesmoke;
-    transition: 0.05s ease-in;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 0.5rem;
+	padding: 1rem 0;
+	height: 3.5rem;
+	border: 1px dotted whitesmoke;
+	transition: 0.05s ease-in;
+	background-color: #242424;
 }
 
-.skills-list >li:hover {
-    background: rgb(78, 78, 78);
-    transform: scale(1.05);
+.skills-list > li:hover {
+	background: rgb(78, 78, 78);
+	transform: scale(1.05);
 }
 
-.skills-list > li > span{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: fit-content;
-    gap:.5rem;
-    justify-self: left;
-    align-self: center;
+.skills-list > li > span {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: fit-content;
+	gap: 0.5rem;
+	justify-self: left;
+	align-self: center;
 }
 
 .skill-text {
-    transform: translateX(3rem);
-    width: fit-content;
+	transform: translateX(3rem);
+	width: fit-content;
 }
 
 .skill-icon {
-    width: 1.1rem;
-    height: auto;
-    align-self: center;
-    justify-self:left;
+	width: 1.1rem;
+	height: auto;
+	align-self: center;
+	justify-self: left;
 }
-
-
 
 /*End of Skills CSS Block*/
 
-
 /*Work Experience CSS Block*/
 .work-experience {
-    padding: 0 1.5rem 0 1.5rem;
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 .jobs {
-    display: grid;
-    grid-column: repeat(1, 1fr);
-    gap: 1.5rem;
+	display: grid;
+	grid-column: repeat(1, 1fr);
+	gap: 1.5rem;
 }
 
-.developer{
-    display: grid;
-    gap: 1.5rem;
-    grid-template-areas: 
-        'one one four four'
-        'two three four four'
-        'five five four four'
-        'five five four four';
+.developer {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-areas:
+		"one one four four"
+		"two three four four"
+		"five five four four"
+		"five five four four";
 
-    padding: 1.5rem;
-    border: 2px solid #ffd700;
+	padding: 1.5rem;
+	border: 2px solid #ffd700;
 }
 
-.trainer{
-    display: grid;
-    gap: 1.5rem;
-    grid-template-areas: 
-        'one one four four'
-        'two three four four'
-        'five five four four'
-        'five five four four';
+.trainer {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-areas:
+		"one one four four"
+		"two three four four"
+		"five five four four"
+		"five five four four";
 
-    padding: 1.5rem;
-    border: 2px solid #ffd700;
+	padding: 1.5rem;
+	border: 2px solid #ffd700;
 }
 
 .work-title {
-    grid-area: one;
-    font-size: 3rem;
-    justify-self: center;
-    align-self: center;
-    color: #ffd700;
+	grid-area: one;
+	font-size: 3rem;
+	justify-self: center;
+	align-self: center;
+	color: #ffd700;
 }
 
 .job-description {
-    grid-area: three;
-    border: 1px dotted whitesmoke;
-    padding: 0 0.4rem 0 1rem;
+	grid-area: three;
+	border: 1px dotted whitesmoke;
+	padding: 0 0.4rem 0 1rem;
 }
 
 #job-descrip-h4 {
-    color: #ffd700;
+	color: #ffd700;
 }
 
 .workplace {
-    grid-area: two;
-    transform: translateY(-1.5rem);
-    align-self: flex-start;
-    border: 1px dotted whitesmoke;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-    color:#2897ff;
+	grid-area: two;
+	transform: translateY(-1.5rem);
+	align-self: flex-start;
+	border: 1px dotted whitesmoke;
+	padding: 1.5rem 1rem 1.5rem 1rem;
+	color: #2897ff;
 }
 
 .job-duties {
-    grid-area: four;
-    padding: 0 1rem;
-    border: 1px dotted whitesmoke
+	grid-area: four;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	padding: 0 1rem;
+	height: max-content;
+	border: 1px dotted whitesmoke;
 }
 
 #duties-label-h3 {
-    color: #ffd700;
+	color: #ffd700;
 }
 
 .duties-list {
-    line-height: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: max-content;
 }
 
 .duties-list > dd {
-    margin-bottom: 1rem;
-    color:lightgrey;
+	margin-bottom: 1rem;
+	color: lightgrey;
 }
 
 .duties-list > dt {
-    color: #2897ff;
+	color: #2897ff;
 }
 
 #title-accomp {
-    color: #ffd700;
-    height: 1rem;
+	color: #ffd700;
+	height: 1rem;
 }
 
 .accomplishments {
-    grid-area: five;
+	grid-area: five;
 }
 
-.accomplishments-list{
-    line-height: 2.5rem;
+.accomplishments-list {
+	line-height: 2.5rem;
 }
 /*End of Work Experience CSS Block*/
 
 /*Education CSS Block*/
-.education{
-    padding: 0 1.5rem 0 1.5rem;
+.education {
+	padding: 0 1.5rem 0 1.5rem;
 }
 
 .accreditations {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    border: 2px solid #ffd700;
-    padding: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	border: 2px solid #ffd700;
+	padding: 1.5rem;
 }
 
 .university {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr 1fr;
-    border: 1px dotted whitesmoke;
-    justify-self: space-around;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 1fr 1fr;
+	border: 1px dotted whitesmoke;
+	justify-self: space-around;
 }
 
 .university > h3 {
-    grid-row: 3;
-    grid-column: 1 / span 2;
-    margin-bottom: 0;
-    justify-self: center;
+	grid-row: 3;
+	grid-column: 1 / span 2;
+	margin-bottom: 0;
+	justify-self: center;
 }
 
 .university > #school-locate {
-    grid-row: 4;
-    grid-column: 2;
+	grid-row: 4;
+	grid-column: 2;
 }
 
 .university > #cert {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    justify-self: center;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    color: #ffd700;
-    padding: 0 .5rem;
+	grid-row: 1;
+	grid-column: 1 / span 2;
+	justify-self: center;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	color: #ffd700;
+	padding: 0 0.5rem;
 }
 /*End of  Education CSS Block*/
 
 /* Contact Info */
 footer {
-    color:whitesmoke;
-    background-color: black;
-    padding:8px;
-    /* width: 100vw; */
+	color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	padding: 8px;
+	max-width: 100vw;
+	margin: 1rem;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	width: min(90%, 80rem);
+	padding-block: 2rem;
+	margin-left: 5rem;
 }
 
 footer li {
-    padding:4px;
-    margin: 12px 0 0 4px;
+	padding: 0.25rem;
+	position: relative;
+	width: max-content;
 }
 
+.footer-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(8rem, 1fr));
+	gap: 1rem;
+}
+.phone-button {
+	position: relative; /* Keep the button relative */
+	background-color: transparent;
+	border: none;
+	color: royalblue;
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+.popup {
+	display: none;
+	position: absolute;
+	bottom: 40%; /* Position the top of the popup at the bottom of the button */
+	left: 110%;
+	background-color: #757575;
+	border: 1px solid #ddd;
+	padding: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	white-space: nowrap; /* Keep the popup content on one line */
+	z-index: 1;
+}
+
+.popup::after {
+	content: "";
+	position: absolute;
+	bottom: 0; /* Align the bottom of the arrow with the bottom of the popup */
+	left: -16px; /* Align the arrow on the right side */
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #f9f9f9 transparent;
+	rotate: 270deg;
+}
 /*******************************************/
 /*MEDIA*/
 
 @media screen and (max-width: 1100px) {
-    body {
-        overflow:auto;
-    }
-    
-    .skill-text {
-        transform: translateX(.5rem);
-    }
-    
+	body {
+		overflow: auto;
+	}
+
+	.skill-text {
+		transform: translateX(0.5rem);
+	}
 }
