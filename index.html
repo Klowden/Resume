@@ -15,8 +15,10 @@
           <h1 id="name">Christopher Lowden</h1>
           <img id="dev-img" src="images/dev_img.jpg" alt="developer image">
           <h2 id="tagline">
-            Fullstack Developer & Software Engineer
+            Fullstack Developer, Software Engineer, & Game Developer
           </h2>
+          <!-- <button onclick="runCode()">Run Code</button>
+          <h3 id="resultDisplay">Result: </h3> -->
 
           <article class = 'prof-sum grid-col-span2'>
             <p>As a highly motivated and adaptable professional with a robust foundation in software and web development, I am poised to bring my solid educational background and fervent passion for coding to your dynamic development projects. With a strong commitment to continuous learning and professional growth, I aim to leverage my comprehensive skill set to contribute effectively and make a significant impact on innovative projects.</p>
@@ -27,8 +29,6 @@
           <div class="freelance"><h2>Need a developer?</h2></div>
           <div class="contact-me">Contact me at:<br>
             <h3><a href="mailto:klowdensolutions@gmail.com">KlowdenSolutions<br>@gmail.com</a></h3>
-            <p>or</p>
-            <h3>Text (304)488-4917</h3>
           </div>
           <div class="note">(The background is interactive)</div>
         </section>
@@ -38,7 +38,7 @@
       <div class="content-wrap">
         <section class="portfolio">
           <h2>Featured Projects</h2>
-          <p>View selected projects below. More information can be found at <a href="https://www.linkedin.com/in/christopher-lowden-a40ba8140/">my LinkedIn page</a>.</p>
+          <p>View selected projects below. More information can be found at <a href="https://www.linkedin.com/in/christopher-lowden-a40ba8140/" target="_blank" rel="noopener noreferrer">my LinkedIn page </a><strong>OR</strong> on <a href="https://klowden.github.io/" target="_blank" rel="noopener noreferrer">my Portfolio!</a></p>
 
         <!-- Copy the whole <section> block to add more projects. -->
         <!--Project 1-->
@@ -48,15 +48,15 @@
               <img class="project-img" src="images/cooledturedLogo.svg" alt="cooledtured Logo">
               <p class = "project-description">Led a team of developers to redesign the Ecommerce site from scratch in the Hydrogen framework built on Remix/React</p>
               <div class = "align-links">
-              <a class = "project-link" href="https://cooledtured.com/" target="_blank"
-              rel = "noopen noreferrer">View Project</a>
-              <a class = "project-link" href="https://github.com/Klowden/CooledturedV3" target="_blank"
-              rel = "noopen noreferrer">View Repo</a>
-            </div>
+                <a class = "project-link" href="https://cooledtured.com/" target="_blank"
+                rel = "noopen noreferrer">View Project</a>
+                <a class = "project-link" href="https://github.com/Klowden/CooledturedV3" target="_blank"
+                rel = "noopen noreferrer">View Repo</a>
+              </div>
             </div>
             <div class = "project-item" id="">
               <h3 class = "project-name">Current Portfolio - Remix</h3>
-              <img class="project-img" src="images/examplePort-remix.svg" alt="Example - Remix Homepage">
+              <img class="project-img" src="images/Portfolio-Screenshot-index.webp" alt="Example - Remix Homepage">
               <p class = "project-description">A Portfolio based in the Remix-Run JS Framework, and one you should definitely check out. It's much more fun to work in than vanilla React.</p>
               <div class = "align-links">
                 <a class = "project-link" href="https://klowden.github.io/" target="_blank"
@@ -66,13 +66,14 @@
               </div>
             </div>
             <div class = "project-item" id="">
-              <h3 class = "project-name">Initial Portfolio - React</h3>
-              <img class="project-img" src="images/examplePort-react.svg" alt="Image - Home">
-              <p class = "project-description">I made this initially to expand into the domain of Reactive applications.</p>
+              <h3 class = "project-name">Media Manager</h3>
+              <img class="project-img" src="images/autopost_logo_placeholder.webp" alt="Example - Remix Homepage">
+              <p class = "project-description">Program coded in Python that utilizes Selenium and various APIs to post and manage content autonomously to my person social media accounts.</p>
               <div class = "align-links">
-                <a class = "project-link" href="#"></a>
-              <a class = "project-link" href="https://github.com/Klowden/PortfolioV1-React" target="_blank" rel="noopen noreferrer">View Repo</a>
+                <a class = "project-link" href="https://bsky.app/profile/kreestoph.bsky.social" target="_blank"
+                rel = "noopen noreferrer">View my Bluesky!</a>
               </div>
+            </div>
             </div>
           </section>
         <!-- End of Project Block. -->
@@ -85,6 +86,9 @@
           <h3>Relevant Skills</h3>
           <article class="skills">
             <ul class = skills-list>
+              <li><span class="skill-text">Godot
+                <img class="skill-icon" src="images/Godot_icon.webp" alt="Godot Icon"></span>
+              </li>
               <li><span class="skill-text">HTML5
                 <img class="skill-icon" src="images/HTML-5-logo-vector-01.png" alt="Html5 Icon"></span>
               </li>
@@ -126,9 +130,6 @@
               </li>
               <li><span class="skill-text">SQL
                 <img class="skill-icon" src="images/sql.png" alt="SQL Icon"></span>
-              </li>
-              <li><span class="skill-text">PHP
-                <img class="skill-icon" src="images/PHP-01.png" alt="PHP Icon"></span>
               </li>
               <li><span class="skill-text">Node.js
                 <img class="skill-icon" src="images/Node-JS-02.png" alt="Node Icon"></span>
@@ -280,21 +281,24 @@
         <div class="footer-content">
         <h2>Let's Connect!</h2>
 
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul class="footer-grid">
-          <li><a href="mailto:klowdensolutions@gmail.com"
-            >KlowdenSolutions@gmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/christopher-lowden-a40ba8140/" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://www.facebook.com/KristopherLowden" target="_blank"
-            rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://github.com/Klowden" target="_blank"
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="footer-grid">
+            <li>
+              <a href="mailto:klowdensolutions@gmail.com"
+              >KlowdenSolutions@gmail.com</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/christopher-lowden-a40ba8140/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a></li>
+            <li>
+              <a href="https://bsky.app/profile/kreestoph.bsky.social" target="_blank"
+              rel="noopener noreferrer">Bluesky</a></li>
+            <li>
+              <a href="https://www.facebook.com/KristopherLowden" target="_blank"
+              rel="noopener noreferrer">Facebook</a></li>
+            <li>
+              <a href="https://github.com/Klowden" target="_blank"
               rel="noopener noreferrer">GitHub.com</a></li>
-              <li>
-                <button id="phone-btn" class="phone-button">Phone: (304)488-4917</button>
-                <div id="info-popup" class="popup">Texts are highly preferred</div>
-              </li>
-            </ul>
+          </ul>
         </div>
       </footer>
     <script src = "scripts/miniCircleClumps.js"></script>
